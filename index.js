@@ -30,22 +30,14 @@ module.exports = {
 
     if (options.includeTimezone) {
       this.import(
-        {
-          development: 'vendor/moment-timezone/tz.js',
-          staging: 'vendor/moment-timezone/tz.min.js',
-          production: 'vendor/moment-timezone/tz.min.js'
-        },
+        'vendor/moment-timezone/tz.js',
         { prepend: true }
       );
     }
 
     if (typeof options.includeLocales === 'boolean' && options.includeLocales) {
       this.import(
-        {
-          development: 'vendor/moment/min/moment-with-locales.js',
-          staging: 'vendor/moment/min/moment-with-locales.min.js',
-          production: 'vendor/moment/min/moment-with-locales.min.js'
-        },
+        'vendor/moment/moment-with-locales.js',
         { prepend: true }
       );
     } else {
@@ -58,11 +50,7 @@ module.exports = {
       }
 
       this.import(
-        {
-          development: 'vendor/moment/moment.js',
-          staging: 'vendor/moment/min/moment.min.js',
-          production: 'vendor/moment/min/moment.min.js'
-        },
+        'vendor/moment/moment.js',
         { prepend: true }
       );
     }
