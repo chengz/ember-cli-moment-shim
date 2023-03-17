@@ -32,6 +32,7 @@ module.exports = {
       this.import(
         {
           development: 'vendor/moment-timezone/tz.js',
+          staging: 'vendor/moment-timezone/tz.min.js',
           production: 'vendor/moment-timezone/tz.min.js'
         },
         { prepend: true }
@@ -42,6 +43,7 @@ module.exports = {
       this.import(
         {
           development: 'vendor/moment/min/moment-with-locales.js',
+          staging: 'vendor/moment/min/moment-with-locales.min.js',
           production: 'vendor/moment/min/moment-with-locales.min.js'
         },
         { prepend: true }
@@ -58,6 +60,7 @@ module.exports = {
       this.import(
         {
           development: 'vendor/moment/moment.js',
+          staging: 'vendor/moment/min/moment.min.js',
           production: 'vendor/moment/min/moment.min.js'
         },
         { prepend: true }
